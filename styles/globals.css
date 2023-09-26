@@ -20,3 +20,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.custom-width{
+ @apply md:w-11/12 mx-auto
+}
