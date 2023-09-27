@@ -12,8 +12,8 @@ export default function Header() {
 
     return (
      <div className={`p-4 ${isDarkMode && 'border'}`} style={{"boxShadow": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}}>
-      <div className="md:flex items-center justify-between custom-width">
-      <div className="flex items-center gap-6">
+      <div className="flex items-center justify-between custom-width gap-1 sm:gap-0">
+      <div className="flex items-center gap-1 sm:gap-6">
         <input style={{"boxShadow": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}} type="text" className="input-style" placeholder="search..."/>
         <button onClick={toggleTheme} className={`text-3xl ${!isDarkMode && 'text-[#333]'}`}>{isDarkMode ? <BsFillCloudSunFill /> : <FaCloudMoon />}</button>
       </div>
@@ -23,7 +23,7 @@ export default function Header() {
       </Link>
       </div>  */}
       <div>
-        <div className={`flex gap-6 text-xl ${!isDarkMode && 'text-[#333]'}`}>
+        <div className={`flex flex-wrap md:gap-6 sm:gap-3 gap-1 text-xl ${!isDarkMode && 'text-[#333]'}`}>
           <a><BsFacebook /></a>
           <a><AiOutlineTwitter /></a>
           <a><BsYoutube /></a>
