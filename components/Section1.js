@@ -18,11 +18,19 @@ export default function Section1() {
   
   return (
     <div className='my-5'>
-      {/* <h1 className='text-center text-3xl font-semibold my-5'>Trending</h1> */}
+      
 
       <Swiper
       spaceBetween={30}
-      slidesPerView={3}
+      // slidesPerView={3}
+      breakpoints={{
+    768: {
+      slidesPerView: 2, // Show only 1 slide on devices with width >= 768px
+    },
+    992: {
+      slidesPerView: 3, // Show 2 slides on devices with width >= 992px
+    },
+  }}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
@@ -39,7 +47,8 @@ export default function Section1() {
 
 function Slide({imageSource}) {
   return (
-    <div>
+    <div  data-aos="fade-up"
+    data-aos-duration="1200" data-aos-easing="ease-in-out">
     <div className='image'>
       <Image src={imageSource} width={1000} height={900} alt='blog image' />
     </div>
