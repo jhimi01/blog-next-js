@@ -11,7 +11,7 @@ export default function Header() {
   const { isDarkMode, toggleTheme } = useMood()
 
     return (
-     <div className={`p-4 ${isDarkMode && 'border'}`} style={{"boxShadow": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}}>
+     <div className={`py-2 px-4 ${isDarkMode && 'border'}`} style={{"boxShadow": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}}>
       <div className="flex items-center justify-between custom-width gap-1 sm:gap-0">
       <div className="flex items-center gap-1 sm:gap-6">
         <input style={{"boxShadow": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px"}} type="text" className="input-style" placeholder="search..."/>

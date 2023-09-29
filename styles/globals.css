@@ -20,10 +20,10 @@ body {
 }
 
 .custom-width{
- @apply md:w-11/12 mx-auto
+ @apply md:w-11/12 mx-auto overflow-x-hidden
 }
 
 .input-style{
-  @apply rounded-full py-1 pl-3 bg-transparent border;
+  @apply rounded-full py-1 my-3 pl-3 bg-transparent border;
   @apply focus:outline-none
 }
