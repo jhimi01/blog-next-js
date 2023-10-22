@@ -31,8 +31,6 @@ export default function Section1() {
       slidesPerView: 3, // Show 2 slides on devices with width >= 992px
     },
   }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       {images.map((image, index) => (
           <SwiperSlide key={index}>

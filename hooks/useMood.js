@@ -9,13 +9,13 @@ const useMood = () => {
 
   useEffect(() => {
     if (isDarkMode) {
-      document.body.classList.add('dark-theme'); // Apply dark theme class
+      document.body.classList.add('dark-theme');
     } else {
-      document.body.classList.remove('dark-theme'); // Remove dark theme class
+      document.body.classList.remove('dark-theme');
     }
   }, [isDarkMode]);
 
-  return { isDarkMode, toggleTheme };
+  return { isDarkMode, toggleTheme, setIsDarkMode };
 };
 
 export default useMood;
