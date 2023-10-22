@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   scroll-behavior: smooth;
   transition: all 0.5 ease-in-out;
 }
@@ -20,17 +20,17 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #858585; 
+  background: #858585;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #6e6e6e; 
+  background: #6e6e6e;
 }
 
 body {
@@ -60,6 +60,9 @@ body {
 
 .custom-width {
   @apply md:w-10/12 mx-auto overflow-x-hidden;
+}
+input:focus {
+  outline: none;
 }
 
 .input-style {
