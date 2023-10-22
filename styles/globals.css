@@ -45,12 +45,12 @@ body {
 
 .bg-gradient-cusotom {
   height: 700px;
-  width: 60%;
+  width: 70%;
   position: fixed;
   z-index: -10;
-  top: 0;
+  top: 30px;
   left: 10%;
-  filter: blur(100px);
+  filter: blur(120px);
   background: radial-gradient(
     circle,
     rgb(247, 196, 218) 0%,
@@ -61,6 +61,7 @@ body {
 .custom-width {
   @apply md:w-10/12 mx-auto overflow-x-hidden;
 }
+
 input:focus {
   outline: none;
 }
