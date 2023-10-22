@@ -1,3 +1,4 @@
+'use client'
 import Section1 from "@/components/Section1";
 import Section2 from "@/components/Section2";
 import useMood from "@/hooks/useMood";
@@ -13,7 +14,7 @@ export default function Home() {
 
     console.log(isDarkMode)
   }, [isDarkMode]);
-
+  console.log(isDarkMode)
   const style = {
     // color: "#333",
     WebkitTextFillColor: "transparent",

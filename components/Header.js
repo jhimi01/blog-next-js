@@ -4,8 +4,6 @@ import { AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { IoLogoWhatsapp } from 'react-icons/io';
 // import Link from "next/link";
 import useMood from "@/hooks/useMood";
-import Link from 'next/link';
-import { TextField } from '@mui/material';
 
 export default function Header() {
 

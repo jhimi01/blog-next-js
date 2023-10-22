@@ -59,7 +59,7 @@ body {
 }
 
 .custom-width {
-  @apply md:w-11/12 mx-auto overflow-x-hidden;
+  @apply md:w-10/12 mx-auto overflow-x-hidden;
 }
 
 .input-style {
