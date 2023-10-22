@@ -8,7 +8,6 @@
   --background-end-rgb: 0, 0, 0;
 }
 
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -19,11 +18,26 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.custom-width{
- @apply md:w-11/12 mx-auto overflow-x-hidden
+.bg-gradient-cusotom {
+  height: 700px;
+  width: 60%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 10%;
+  filter: blur(100px);
+  background: radial-gradient(
+    circle,
+    rgb(247, 196, 218) 0%,
+    rgb(172, 203, 238) 100%
+  );
 }
 
-.input-style{
+.custom-width {
+  @apply md:w-11/12 mx-auto overflow-x-hidden;
+}
+
+.input-style {
   @apply rounded-full py-1 my-3 pl-3 bg-transparent border;
-  @apply focus:outline-none
+  @apply focus:outline-none;
 }
