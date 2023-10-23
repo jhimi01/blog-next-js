@@ -1,12 +1,11 @@
-
-
-const Button = ({text}) => {
-
+const Button = ({ text }) => {
   return (
-    <button className="bg-black p-4 text-white" style={{letterSpacing: '2px', fontFamily: "sans-serif"}}>
-        {text}
+    <button
+      className="btn-custom"
+    >
+      {text}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

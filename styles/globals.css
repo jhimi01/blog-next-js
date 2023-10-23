@@ -59,6 +59,20 @@ body {
   );
 }
 
+
+.active, .btn-custom{
+  background: #000;
+  color: white;
+  padding: 6px 10px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
+
+.active:active, .btn-custom:active {
+  background-color: #1f1f1f;
+  transform: scale(.96);
+}
+
 .custom-width {
   @apply md:w-10/12 mx-auto overflow-x-hidden;
 }

@@ -1,4 +1,3 @@
-
 import Section1 from "@/components/Section1";
 import Section2 from "@/components/Section2";
 import useMood from "@/hooks/useMood";
@@ -13,11 +12,10 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
 
-    console.log(isDarkMode)
+    console.log(isDarkMode);
   }, [isDarkMode]);
-  console.log(isDarkMode)
+  console.log(isDarkMode);
   const style = {
-    // color: "#333",
     WebkitTextFillColor: "transparent",
     WebkitTextStrokeWidth: "1px",
     WebkitTextStrokeColor: "#666",
@@ -25,9 +23,8 @@ export default function Home() {
 
   return (
     <div className="custom-width">
-      {/* <Helmet text='blog'></Helmet> */}
       <Head>
-        <title>Blog</title>
+        <title>Venture</title>
       </Head>
       <div className="border-b py-10 md:px-0 px-3 md:space-y-5">
         <p
@@ -55,7 +52,7 @@ export default function Home() {
         </p>
       </div>
       {/* {shouldShowGradient && <span className="bg-gradient-cusotom"></span>} */}
-     
+
       <span className="bg-gradient-cusotom add-gradient"></span>
       <Hero />
       <Section1 />

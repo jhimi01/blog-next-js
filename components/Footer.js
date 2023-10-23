@@ -3,10 +3,10 @@ import logo from "../public/logo.png";
 import { AiOutlineMail } from "react-icons/ai";
 export default function Footer() {
   return (
-    <footer className="bg-[#3333332a] py-10 mt-5">
+    <footer className="bg-[#3333332a] py-10 px-4 md:px-0 mt-5">
       <div className="custom-width">
-        <div className="flex justify-between gap-5 my-4">
-          <div className="flex-1 space-y-2">
+        <div className="md:flex justify-between gap-5 my-4">
+          <div className="md:flex-1 space-y-2">
             <h4 className="font-bold text-xl">About</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
@@ -14,15 +14,15 @@ export default function Footer() {
               culpa dolorum!
             </p>
             <div className="flex items-center gap-2">
-              <h5 className="font-medium">email:</h5>
+              <h5 className="font-semibold">email:</h5>
               <p>abdf@gmail.com</p>
             </div>
             <div className="flex items-center gap-2">
-              <h5 className="font-medium">Phone:</h5>
+              <h5 className="font-semibold">Phone:</h5>
               <p>+0880172345</p>
             </div>
           </div>
-          <div className="flex-2 px-10">
+          <div className="md:flex-2 lg:px-10 md:px-3">
             <h3 className="text-xl font-bold">Quick Link</h3>
             <ul>
               <li>home</li>
@@ -31,7 +31,7 @@ export default function Footer() {
               <li>Contact</li>
             </ul>
           </div>
-          <div className="flex-2 px-10">
+          <div className="md:flex-2  lg:px-10 md:px-3">
             <h3 className="text-xl font-bold">Category</h3>
             <ul>
               <li>Lifestyle</li>
@@ -40,7 +40,7 @@ export default function Footer() {
               <li>Economy</li>
             </ul>
           </div>
-          <div className="bg-white p-4 rounded-xl flex-1 text-center">
+          <div className="bg-white p-4 rounded-xl md:flex-1 text-center">
             <h3 className="text-xl font-semibold text-black">
               weekly newsletter
             </h3>
