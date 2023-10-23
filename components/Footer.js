@@ -3,7 +3,7 @@ import logo from "../public/logo.png";
 import { AiOutlineMail } from "react-icons/ai";
 export default function Footer() {
   return (
-    <footer className="bg-[#3333332a] py-10">
+    <footer className="bg-[#3333332a] py-10 mt-5">
       <div className="custom-width">
         <div className="flex justify-between gap-5 my-4">
           <div className="flex-1 space-y-2">
