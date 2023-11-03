@@ -2,19 +2,19 @@ import Section1 from "@/components/Section1";
 import Section2 from "@/components/Section2";
 import useMood from "@/hooks/useMood";
 import Head from "next/head";
-import { useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS file
 import Hero from "@/components/Hero";
+import { darkModeContext } from "@/Provider/DarModeProvider";
 
 export default function Home() {
-  const { isDarkMode } = useMood();
+  //  handle dark mode context
+  const { isDark } = useContext(darkModeContext);
+
   useEffect(() => {
     AOS.init();
-
-    console.log(isDarkMode);
-  }, [isDarkMode]);
-  console.log(isDarkMode);
+  }, [isDark]);
   const style = {
     WebkitTextFillColor: "transparent",
     WebkitTextStrokeWidth: "1px",
