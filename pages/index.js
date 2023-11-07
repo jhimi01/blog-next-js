@@ -12,6 +12,8 @@ export default function Home() {
   //  handle dark mode context
   const { isDark } = useContext(darkModeContext);
 
+  console.log(isDark)
+
   useEffect(() => {
     AOS.init();
   }, [isDark]);
@@ -53,7 +55,7 @@ export default function Home() {
       </div>
       {/* {shouldShowGradient && <span className="bg-gradient-cusotom"></span>} */}
 
-      <span className="bg-gradient-cusotom add-gradient"></span>
+     {!isDark &&  <span className="bg-gradient-cusotom add-gradient"></span>}
       <Hero />
       <Section1 />
       <Section2 />
