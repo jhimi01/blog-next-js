@@ -1,7 +1,10 @@
-import { Slide } from '@/components/blog'
-import React from 'react'
+import Image from 'next/image'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const blogs = () => {
+// Import Swiper styles
+import 'swiper/css';
+
+export default function Blog() {
 
   const travelblog = [
     {
@@ -55,13 +58,55 @@ const blogs = () => {
     }
 ]
 
+
+  const images = [
+    '/images/img (1).jpg',
+    '/images/img (2).jpg',
+    // '/images/img (3).jpg',
+    '/images/img (4).jpg',
+    '/images/img (5).jpg',
+    '/images/img (6).jpg',
+    '/images/img (7).jpg',
+  ]
+  
   return (
-    <div className="custom-width my-20">
-      <div className='grid grid-cols-3 gap-10'>
-        {travelblog.map((blog) => <Slide blog={blog} />)}
-      </div>
-    </div>
+    <div className='my-10'>
+    <Swiper
+      spaceBetween={30}
+      loop={true}
+      breakpoints={{
+        768: { slidesPerView: 2 },
+        992: { slidesPerView: 3 },
+      }}
+    >
+      {travelblog.map((blog, index) => (
+        <SwiperSlide key={index}>
+          <Slide blog={blog} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
   )
 }
 
-export default blogs
+export function Slide({ blog }) {
+  return (
+    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+      <div className="relative h-64">
+        <Image
+          src={blog.img}
+          layout="fill"
+          objectFit="cover"
+          alt={blog.title}
+        />
+      </div>
+      <div className="p-4">
+        <h2 className="text-lg font-semibold mb-2">{blog.title}</h2>
+        <p className="text-gray-600 text-sm mb-2">
+          By {blog.author} | {blog.date}
+        </p>
+        <p className="text-gray-700">{blog.content}</p>
+      </div>
+    </div>
+  );
+}
