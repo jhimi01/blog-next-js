@@ -1,5 +1,3 @@
-import Section1 from "@/components/blog";
-import Section2 from "@/components/Section2";
 import useMood from "@/hooks/useMood";
 import Head from "next/head";
 import { useContext, useEffect, useState } from "react";
@@ -8,6 +6,7 @@ import "aos/dist/aos.css"; // Import the AOS CSS file
 import Hero from "@/components/Hero";
 import { darkModeContext } from "@/Provider/DarModeProvider";
 import Blog from "@/components/blog";
+
 
 export default function Home() {
   //  handle dark mode context
@@ -54,12 +53,10 @@ export default function Home() {
           I am a Blogger & Photographer Based in the world.
         </p>
       </div>
-      {/* {shouldShowGradient && <span className="bg-gradient-cusotom"></span>} */}
 
      {!isDark &&  <span className="bg-gradient-cusotom add-gradient"></span>}
       <Hero />
       <Blog />
-      <Section2 />
     </div>
   );
 }

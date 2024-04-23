@@ -8,11 +8,18 @@ import Link from "next/link";
 
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
   const pathname = usePathname();
 
   const { isDarkMode, toggleTheme } = useMood();
+   // Function to handle the click event and redirect to /blogs
+ const handleInputClick = () => {
+  router.push('/blogs');
+};
+
 
   return (
     <div
@@ -26,6 +33,7 @@ export default function Header() {
             type="text"
             className="input-style"
             placeholder="search..."
+            onClick={handleInputClick}
           />
           <button
             onClick={toggleTheme}
