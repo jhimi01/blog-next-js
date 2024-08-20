@@ -103,7 +103,8 @@ export default function Blog() {
       >
         {travelblog.map((blogData, index) => (
           <SwiperSlide key={index}>
-            <Link href={`/blogs/${blogData.id}`}><div className="bg-white rounded-lg overflow-hidden shadow-lg">
+            <Link href={`/blogs/${blogData.id}`}>
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <Image
                   src={blogData.img}
@@ -126,26 +127,6 @@ export default function Blog() {
         ))}
       </Swiper>
 
-      {/* <Swiper
-        slidesPerView={'auto'}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-        <SwiperSlide>Slide 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-        <SwiperSlide>Slide 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-        <SwiperSlide>Slide 4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-        <SwiperSlide>Slide 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-        <SwiperSlide>Slide 6 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-        <SwiperSlide>Slide 7 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-        <SwiperSlide>Slide 8 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-        <SwiperSlide>Slide 9 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsam minus optio eveniet, earum laboriosam facere maiores suscipit delectus, molestiae nam voluptas, ab dolorum dolorem ducimus quibusdam doloremque fuga corrupti.</SwiperSlide>
-      </Swiper> */}
      <div className="text-center  my-10">
      <Link href='/blogs' className="text-center">
      <Button text={'get started'}/>
